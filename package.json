@@ -1,0 +1,57 @@
+{
+	"name": "@sapphire/node-bun-template",
+	"version": "1.0.0",
+	"description": "An example of how to bun your node so you can node and bun at once",
+	"private": true,
+	"main": "src/main.ts",
+	"type": "module",
+	"imports": {
+		"#setup": "./dist/lib/setup.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf dist",
+		"cleanbuild": "yarn clean && tsc",
+		"lint": "prettier --check . && cross-env TIMING=1 eslint --format=pretty src",
+		"format": "prettier --write . && cross-env TIMING=1 eslint --fix --format=pretty src",
+		"start": "yarn cleanbuild && node .",
+		"watch": "tsc -w",
+		"dev": "bun ./src/bun.ts"
+	},
+	"dependencies": {
+		"@sapphire/framework": "^5.1.0",
+		"@skyra/env-utilities": "^1.3.0",
+		"discord-api-types": "^0.37.71",
+		"discord.js": "^14.14.1",
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@sapphire/prettier-config": "^2.0.0",
+		"@sapphire/ts-config": "^5.0.1",
+		"@types/lodash.merge": "^4.6.9",
+		"@types/node": "^20.12.7",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.57.0",
+		"eslint-config-neon": "^0.1.62",
+		"eslint-formatter-pretty": "^6.0.1",
+		"lodash.merge": "^4.6.2",
+		"prettier": "^3.2.5",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.4.5",
+		"vitest": "^1.5.2"
+	},
+	"author": {
+		"name": "Vlad Frangu",
+		"email": "me@vladfrangu.dev"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"packageManager": "yarn@4.1.1",
+	"volta": {
+		"node": "20.12.2",
+		"yarn": "4.1.1"
+	}
+}
