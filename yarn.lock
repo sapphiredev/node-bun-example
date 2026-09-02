@@ -925,7 +925,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^7.8.0"
     "@typescript-eslint/parser": "npm:^7.8.0"
     cross-env: "npm:^7.0.3"
-    discord-api-types: "npm:^0.37.71"
+    discord-api-types: "npm:^0.38.0"
     discord.js: "npm:^14.14.1"
     eslint: "npm:^8.57.0"
     eslint-config-neon: "npm:^0.1.62"
@@ -2502,10 +2502,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.71, discord-api-types@npm:^0.37.73":
+"discord-api-types@npm:^0.37.73":
   version: 0.37.83
   resolution: "discord-api-types@npm:0.37.83"
   checksum: 10/63aee8b4634f98e24921ba7ba82eab30105917d7bf40739b7fbe327a8c93134a78408d842bd7ad7cf3f45948d86db5ec0cb670d66e0fe0f8229cb15bfda5108f
+  languageName: node
+  linkType: hard
+
+"discord-api-types@npm:^0.38.0":
+  version: 0.38.55
+  resolution: "discord-api-types@npm:0.38.55"
+  checksum: 10/590933bb9866cc91cb2fda8d96298ce01ed2e92590148cd512d4617573bf079830114b2aa48a5ed508b390f379e66fe14dd23be2c1715eae4fad581a5d49304b
   languageName: node
   linkType: hard
 
